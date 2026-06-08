@@ -62,7 +62,7 @@ header img{
     height:70px;
     width:auto;
     transition:0.4s ease;
-    animation:floatLogo 4s ease-in-out infinite;
+    animation: glowLogo 2.5s ease-in-out infinite;
 }
 
 header img:hover{
@@ -178,13 +178,13 @@ header img:hover{
     }
 }
 
-@keyframes floatLogo{
+@keyframes glowLogo{
     0%,100%{
-        transform:translateY(0);
+        filter: drop-shadow(0 0 5px #06b6d4);
     }
 
     50%{
-        transform:translateY(-10px);
+        filter: drop-shadow(0 0 20px #6366f1);
     }
 }
 
